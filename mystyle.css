@@ -1,65 +1,79 @@
 body {
-    background-color: rgb(238, 234, 223);
-  }
+  background-color: rgb(238, 234, 223);
+}
 
+.main-container {
+  padding-left: 310px;
+  position: relative;
+  font-family: "Monaco", monospace;
+  min-height: calc(100vh - 250);
+  overflow-x: hidden; /* Disable horizontal scroll, or else it would overlapp to side nav bar*/
+}
 
-  .header {
-    width: 100%;
-    height: 100vh;
-    background: lightgray;
-  } 
+.header {
+  text-align: center;
+  padding: 10px;
+}
 
-  .side-nav{
-    width: 250px;
-    height: 100%;
-    background: grey;
-    position: fixed; 
-    top: 0%;
-    left: 0%;
-    padding: 10px 30px;
-  }
+.main-content {
+  position: relative;
+  padding: 10px;
+  padding: bottom 100px;
+  min-height: 100vh;
+}
 
-  .home-logo{
-    display: block;
-    margin-bottom: 120px;
-    text-align: center;
-  }
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
 
-  .logo-img{
-    width: 130px;
-  }
+.side-nav {
+  width: 250px;
+  height: 100%;
+  background: grey;
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  top: 0%;
+  left: 0%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 10px 30px;
+}
 
-  .nav-links{
-    position: relative;
-    list-style: none;
-    padding-left: 0%;
-    font-family: "Monaco", monospace;
-  }
-    
+.home-logo {
+  display: block;
+  margin-bottom: 120px;
+  text-align: center;
+}
 
-  .nav-links li{
-    text-align: center;
-    border-radius: 5px;
-  }
+.logo-img {
+  width: 130px;
+}
 
-  .nav-links li a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-  }
+.nav-links {
+  position: relative;
+  list-style: none;
+  padding-left: 0%;
+  font-family: "Monaco", monospace;
+}
 
-  .nav-links li:hover a{
-    color: black;
-    transition: 0.5s;
-  }
+.nav-links li {
+  text-align: center;
+  border-radius: 5px;
+}
 
-  .nav-links li:hover {
-   background-color: white;
-  }
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+}
 
+.nav-links li:hover a {
+  color: black;
+  transition: 0.5s;
+}
 
-  
-
-  
-
-  
+.nav-links li:hover {
+  background-color: white;
+}
