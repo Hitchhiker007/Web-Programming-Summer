@@ -10,26 +10,27 @@ body {
   overflow-x: hidden; /* Disable horizontal scroll, or else it would overlapp to side nav bar*/
 }
 
-.header {
+header {
   text-align: center;
   padding: 10px;
 }
 
-.main-content {
+main {
   position: relative;
   padding: 10px;
   padding: bottom 100px;
   min-height: 100vh;
 }
 
-.footer {
+footer {
   position: absolute;
   text-align: center;
   bottom: 0;
   width: 100%;
+
 }
 
-.side-nav {
+nav {
   width: 250px;
   height: 100%;
   background: grey;

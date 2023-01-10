@@ -2,15 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="contact_us.css">
 </head>
-
 <body>
-    <div class="side-nav">
+    <nav>
         <a href="#" class="home-logo">
             <img src="home_logo.png" class="logo-img">
         </a>
         <ul class="nav-links">
-            <li><a href="main.html">
+            <li><a href="index.html">
                     <p>Home</p>
                 </a></li>
             <li><a href="#">
@@ -30,44 +30,68 @@
                     <p>Contact Us</p>
                 </a></li>
         </ul>
-    </div>
+    </nav>
     <div class="main-container">
-        <div class="header">
+        <header>
             <h1>Contact Us</h1>
-        </div>
-        <div class="main-content">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Donec laoreet ligula turpis, vitae suscipit ex placerat ac.
-                Duis suscipit vestibulum sodales. Mauris suscipit pellentesque justo, sit amet placerat purus ultrices
-                quis.
-                Sed imperdiet pellentesque consequat. Quisque tempor molestie consectetur. Donec volutpat lorem sed
-                felis sollicitudin semper.
-                Etiam tempor, risus ut bibendum pharetra, diam nisi scelerisque orci, ac laoreet nisl magna at diam. Nam
-                et gravida dolor, a hendrerit nisl.
-                Nulla in consequat justo. Phasellus efficitur vel nunc at pharetra. Nam ullamcorper feugiat ipsum sit
-                amet tincidunt.
-                Vivamus tristique lorem eu lorem tempus feugiat.
-                Curabitur at dictum ligula. Fusce id varius enim.
-                Vivamus non turpis eu massa laoreet lacinia.
-            </p>
+        </header>
+        <main>
+            <section> <!-- address + email + number-->
+                <h2>Office Location</h2>
+                <p>124 La Trobe St,<br>Melbourne VIC 3000, Australia</p>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12608.877052909513!2d144.95518384132487!3d-37.80833287605219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642cb0a2ff0fb%3A0xed6e6acedcefb31c!2sRMIT%20University%20Melbourne%20City%20Campus!5e0!3m2!1sen!2skh!4v1673359333432!5m2!1sen!2skh" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p></p>
+                <h2>Contact Information</h2>
+                <p>Office: <a href="mailto:s3856456@student.rmit.edu.au">s3856456@student.rmit.edu.au</a></p>
+                <p>General: <a href="mailto:s3718003@student.rmit.edu.au">s3718003@student.rmit.edu.au</a></p>
+                <p>Phone: <a href="tel: 9925 2000">(03) 9925 2000</a></p>
+            </section>
+                
+            <section> <!-- enquiry form -->
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <form>
+                            <label for="fname" class="form-label">First Name</label>
+                            <div>
+                                <input class="form-input" type="text" name="fname" required>
+                            </div>
+                            
 
-            <p>
-                Proin quis lacus sed metus mattis auctor at eu ex. In sit amet malesuada ligula.
-                Donec facilisis, turpis ut ornare finibus, tellus erat malesuada nunc, nec volutpat odio leo vitae
-                massa.
-                Praesent viverra ante purus, vel pretium elit consectetur ut. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.
-                Proin ac purus eget nisi tempus condimentum. Etiam pulvinar mi in quam laoreet ornare. Morbi molestie
-                nibh tempus, convallis magna non, semper sapien.
-            </p>
-
-
-        </div>
-        <div class="footer">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <div>
+                                <input class="form-input" type="text" name="lname" required>
+                            </div>
+                            
+                            <label for="email" class="form-label">Email</label>
+                            <div>
+                                <input class="form-input" type="email" name="email" required> 
+                            </div>
+                            
+                            <label for="message" class="form-label">Message</label>
+                            <div>
+                                <input class="form-input" id="message-input" type="text" name="message" size="300" required>
+                            </div>
+                            <div>
+                                <input id="submit" type="submit" value="Submit">
+                            </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
             <p>© William Wells & Derek Tek 2023 LLC</p>
-        </div>
-    </div>
+        <footer>
     </div>
 </body>
 
 </html>
+
+
+<!-- Contact us page: 
+    this page must have the address, email and enquiry form options. 
+    Some people may prefer to call, some people may enquire via the enquiry form. 
+    The form must perform validation via HTML5. 
+    Form queries must be submitted to a new page named ‘submitted.html’. 
+    Basic styling required. -->

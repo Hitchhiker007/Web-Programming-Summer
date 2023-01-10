@@ -1,0 +1,42 @@
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.form-container {
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-radius: 6px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 2px;
+    display: inline-block;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#submit {
+    background-color: rgb(99, 169, 250);
+    border: none;
+    padding: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+#submit:hover {
+    opacity: 80%;
+}
+
