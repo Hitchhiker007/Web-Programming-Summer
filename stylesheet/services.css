@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid-container div {
+    background-color: white;
+    padding: 50px 30px;
+    margin: 10px;
+    border-radius: 6px;
+}
