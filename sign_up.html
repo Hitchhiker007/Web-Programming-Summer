@@ -11,32 +11,42 @@
         function checkEmail(form) {
             email1 = form.email1.value;
             email2 = form.email2.value;
-
-        
-                  
             // If Not same return False.    
             if (email1 != email2) {
                 alert ("\n The email you have entered does not match, please try again.")
                 return false;
             }
-
             // If same return True.
             else{
-                alert("Successful Welcome To Mind Watch!")
                 return true;
             }
         }
-    </script>
+        // Function to check Whether mobile phone number is in a valid
+        // Australian mobile number format or not
+        function checkMobile(form) {
+            var mobileNumber = form.mobile.value;
+            var mobilePattern = /^61[4]\d{8}$/g;
+
+            if (!mobilePattern.test(mobileNumber)){
+                alert("Please eneter a valid Australian Mobile Number");
+                return false; 
+            }
+            else{
+                return true;
+            }
+        }
+        </script>
 </head>
 
 <div class="body">
     <div class="container">
         <div class="title">Sign Up</div>
-        <form action="#" onSubmit = "return checkEmail(this)">
+        <form onSubmit = "return checkEmail(this) && checkMobile(this);">
             <div class="content">
                 <div class="input-box">
                     <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your first name" maxlength = "30" required>
+                    <input type="text" placeholder="Enter your first name" pattern = "[/A-Z][^0-9]{0,}" maxlength = "30" 
+                    title="The first letter of your name should be a capital, including no numbers." required>
                 </div>
                 <div class="input-box">
                     <span class="details">Last Name</span>
@@ -52,7 +62,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your Phone Number" required>
+                    <input type="text" name="mobile"  placeholder="Enter your Phone Number" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Birth Year</span>
