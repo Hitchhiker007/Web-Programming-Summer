@@ -44,6 +44,10 @@ form .content .student-radio{
 
 form .content .employment-radio{
     margin: 18px 0px 10px 0px;
+
+}
+form .content .input-box .birth-year{
+    margin: 15px 0px 10px 0px;
 }
 
 form .button{
@@ -55,3 +59,4 @@ form .button input{
     height: 100%;
     width: 100%;
 }
+
