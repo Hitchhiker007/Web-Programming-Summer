@@ -12,7 +12,11 @@
     
 }
 
-.grid-container img {
+.service-icon {
+    height: 30%;
+}
+
+.service-icon img{
   
     width: 80%;
 }
