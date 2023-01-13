@@ -1,0 +1,10 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+    text-align: center;
+}
+
+.video-container {
+    margin-bottom: 50px;
+}
+
