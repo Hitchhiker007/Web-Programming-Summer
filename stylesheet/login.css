@@ -1,0 +1,51 @@
+
+.body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Monaco", monospace;
+
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 30px 30px;
+}
+
+.container .title{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container form .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .input-box input{
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid;
+}
+
+form .content .input-box{
+    width: calc(100% / 1 - 20px);
+    margin: 18px 0px 10px 0px;
+}
+
+
+form .button{
+    height: 50px;
+    margin: 20px 0px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+}
+
