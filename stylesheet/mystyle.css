@@ -3,7 +3,6 @@ body {
 }
 
 .main-container {
-  padding-left: 310px;
   position: relative;
   font-family: "Monaco", monospace;
   min-height: calc(100vh - 250);
@@ -31,43 +30,34 @@ footer {
 }
 
 nav {
-  width: 250px;
-  height: 100%;
-  background: grey;
-  position: fixed;
-  z-index: 1; /* Stay on top */
-  top: 0%;
-  left: 0%;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding: 10px 30px;
+  height: 70px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
-.home-logo {
-  display: block;
-  margin-bottom: 120px;
-  text-align: center;
-}
-
-.logo-img {
-  width: 130px;
+.nav-bar ul {
+  display: flex;
 }
 
 .nav-links {
-  position: relative;
   list-style: none;
-  padding-left: 0%;
-  font-family: "Monaco", monospace;
+}
+.nav-links li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  border-radius: 40px;
 }
 
 .nav-links li {
   text-align: center;
   border-radius: 5px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 10px;
+  padding: 0px 20px 0px 20px;
 }
 
 .nav-links li:hover a {
@@ -77,4 +67,15 @@ nav {
 
 .nav-links li:hover {
   background-color: white;
+}
+
+
+.home-logo {
+  display: block;
+  text-align: center;
+
+}
+
+.logo-img {
+  height: 70px;
 }
