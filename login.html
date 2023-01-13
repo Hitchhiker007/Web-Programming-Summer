@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet/login.css">
+    <script>
+
+    </script>
+    
+</head>
+
+<div class="body">
+    <div class="container">
+        <div class="title">Login</div>
+        <form  action = "submitted.html">
+            <div class="content">
+                
+                <div class="input-box">
+                    <span class="details">Email Address</span>
+                    <input type="email" name="email1" placeholder="Enter your email address"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z]).{6,}"
+                        title="Your password must be at least 6 characters long, and have minimum one letter and one number"
+                        required>
+                </div>
+            </div>
+            <div class="button">  
+                    <input type="submit" value="Login"> 
+            </div>
+        </form>
+    </div>
+</div>
+
+</html>
