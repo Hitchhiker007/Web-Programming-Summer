@@ -1,0 +1,61 @@
+.flexbox-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  background-color: blue;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexbox-container-2 {
+  height: 300px;
+  display: flex;
+  background-color: lime;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid darkgrey;
+  background-color: aliceblue;
+}
+
+.flexbox-item-1 {
+  min-height: 180px;
+}
+
+.flexbox-item-2 {
+  min-height: 180px;
+}
+
+.flexbox-item-3 {
+  min-height: 180px;
+}
+
+.flexbox-item-4 {
+  min-height: 180px;
+}
+
+.flexbox-item-5 {
+  min-height: 180px;
+}
+
+.flexbox-item-6 {
+  min-height: 180px;
+}
+
+form .button {
+  height: 50px;
+  margin: 20px 0px;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  font-family: 'Monaco', monospace;
+  color: white;
+}
