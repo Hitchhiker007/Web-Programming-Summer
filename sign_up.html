@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="stylesheet/style_form.css">
     <script>
 
+// Function for checking regex of the first email, second email does not require this as it needs to be the same
+// as the first email anyway
+function checkEmailRegex(form) {
+            var email_reg = form.email1.value;
+            var emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (!emailregex.test(email_reg)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
         // Function to check Whether both emails
         // are the same or not.
         function checkEmail(form) {
@@ -60,7 +75,7 @@
 <div class="body">
     <div class="container">
         <div class="title">Sign Up</div>
-        <form onSubmit="return checkEmail(this) && checkMobile(this) && checkBirth(this);" action = "submitted.html">
+        <form onSubmit="return checkEmailRegex(this) && checkEmail(this) && checkMobile(this) && checkBirth(this);" action = "submitted.html">
             <div class="content">
                 <div class="input-box">
                     <span class="details">First Name</span>
@@ -73,12 +88,12 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Email Address</span>
-                    <input type="email" name="email1" placeholder="Enter your email address"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <input type="text" name="email1" placeholder="Enter your email address"required>
+                        <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  -->
                 </div>
                 <div class="input-box">
                     <span class="details">Confrim Email Address</span>
-                    <input type="email" name="email2" placeholder="Confirm your email address" required>
+                    <input type="text" name="email2" placeholder="Confirm your email address" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
