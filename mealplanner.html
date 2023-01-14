@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="stylesheet/mealplanner.css">
-    <title>Flexbox Example</title>>
+    <title>Flexbox Example</title>
 </head>
 
 </script>
@@ -83,11 +83,17 @@ the script is run after the document is parsed -->
                     <input type="submit" value="Generate"> 
             </div>
         </form>
+        
+        <div class = "meal_planner_list">
+            <ul id="mealList"></ul>
+        </div>
+        
         <script>
             const calculator = document.getElementById("calculator");
 
             calculator.addEventListener("submit", (event)=> {
                
+                event.preventDefault()
                 const calories = document.getElementById("#calories");
                 const meals = document.getElementById("#meals");
 
@@ -95,11 +101,61 @@ the script is run after the document is parsed -->
                 var meals_val = meals.value;
 
                 const calc_meal = calories_val / meals_val;
-                alert(
-                    calc_meal + " calories for each meal"
-                );
+                alert(calc_meal + " calories for each meal");
                 
-            })
+
+
+           
+
+                if (calc_meal <= 500)
+                { 
+                       // Create an empty array
+                arr = []
+                // make a pool of food relating to that category
+                productList = ["broccoli", "spinach", "carrot", "kale", "rice", "bowl of oats", "bannana", "fruit-smoothie"];
+                // for loop for the length of the meals_val, which is selected by the user
+                for(let i = 1;i<=meals_val;i++)
+                {
+                // randomize by randomly selecting a type of food from product list
+                let mealplan = productList[Math.floor(Math.random() * productList.length)];
+                console.log(arr)
+                // push each element to the array
+                arr.push(mealplan)
+                }
+                
+                // this appends the elements to the html list named "mealList"
+                let list = document.getElementById("mealList");
+                arr.forEach((item) => {
+                let li = document.createElement("li");
+                li.innerText = item;
+                list.appendChild(li);
+                });   
+                }
+                // else if((calc_meal >= 1500) || (calc_meal <= 1999))
+                // {
+                //     alert("Sandwich")
+                // }
+                else {
+                            
+                arr = []
+                productList = ["ice-cream", "chocolate-mousse", "brownies", "pavlova", "chocolate", 
+                "cake", "cheese-cake", "milkshake"];
+                for(let i = 1;i<=meals_val;i++)
+                {
+                let mealplan = productList[Math.floor(Math.random() * productList.length)];
+                console.log(arr)
+                arr.push(mealplan)
+                }
+                let list = document.getElementById("mealList");
+                arr.forEach((item) => {
+                let li = document.createElement("li");
+                li.innerText = item;
+                list.appendChild(li);
+                });   
+                }
+             });
+
+             
         </script>
     </div>
 </body>
