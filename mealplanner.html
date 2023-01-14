@@ -62,33 +62,45 @@ the script is run after the document is parsed -->
         </div>
         </div>  
     <div class="flexbox-container-2">
-        <form onSubmit=" " action = " ">
+        <form id = "calculator">
             <div class="content">
                 <div class="calories">
-                    <span class="birth-year-title"></span>
-                    <div class="birth-year">
-                        <label for="year">I want to eat</label>
+                        <labe>I want to eat</label>
                         <select id="#calories" required>
                             <option value="">None</option>
                         </select>
-                        <span class= "calories">calories</span>
-                    </div>
+                        <span class= "word">calories</span>
                 </div>
                 <div class="meals">
-                    <span class="birth-year-title"></span>
-                    <div class="birth-year">
-                        <label for="year">in</label>
+                        <label>in</label>
                         <select id="#meals" required>
                             <option value="">None</option>
                         </select>
-                        <span class= "meals">meals</span>
-                    </div>
+                        <span class= "word">meals</span>
                 </div>
             </div>
             <div class="button">  
                     <input type="submit" value="Generate"> 
             </div>
         </form>
+        <script>
+            const calculator = document.getElementById("calculator");
+
+            calculator.addEventListener("submit", (event)=> {
+               
+                const calories = document.getElementById("#calories");
+                const meals = document.getElementById("#meals");
+
+                var calories_val = calories.value;
+                var meals_val = meals.value;
+
+                const calc_meal = calories_val / meals_val;
+                alert(
+                    calc_meal + " calories for each meal"
+                );
+                
+            })
+        </script>
     </div>
 </body>
 </html>
