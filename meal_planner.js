@@ -12,7 +12,7 @@ for (var i = 0; i < options.length; i++) {
 }
 
 var select = document.getElementById("#meals");
-var options = ["1", "2", "3", "4", "5","6", "7", "8", "9", "10"];
+var options = ["1", "2", "3", "4", "5"];
 
 for (var i = 0; i < options.length; i++) {
   var opt = options[i];
