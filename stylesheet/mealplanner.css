@@ -65,6 +65,16 @@ header {
   color: white;
 }
 
+.flexbox-item:focus {
+  background-color: rgb(99, 169, 250);
+  color: white;
+}
+
+.flexbox-item .box-title:focus {
+  background-color: rgb(99, 169, 250);
+  color: white;
+}
+
 .flexbox-item-1 {
 }
 
