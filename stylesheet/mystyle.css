@@ -26,7 +26,6 @@ footer {
   text-align: center;
   bottom: 0;
   width: 100%;
-
 }
 .logo-img {
   height: 70px;
@@ -38,12 +37,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Monaco", monospace;
 }
 
 .menu-icon {
   font-size: 24px;
   margin: 8px;
-
 }
 
 .nav-bar ul {
@@ -65,10 +64,16 @@ footer {
 
 .nav-bar li:hover {
   background-color: white;
+  transition: 0.5s;
 }
 
 .nav-bar li a:hover {
   color: black;
+  transition: 0.5s;
+}
+
+.logo-img {
+  height: 70px;
 }
 
 .menu-icon {
@@ -91,34 +96,33 @@ footer {
 
 @media (max-width: 600px) {
   .menu-icon {
-      display: flex;
+    display: flex;
   }
 
   .nav-bar {
-      display: none;
-      width: 100%;
+    display: none;
+    width: 100%;
   }
 
   .nav {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-bar ul {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .nav-bar li {
-      text-align: center;
+    text-align: center;
   }
-  
+
   .nav-bar li a {
-      padding: 8px 16px;
+    padding: 8px 16px;
   }
 
   .nav-bar.active {
-      display: flex;
+    display: flex;
   }
 }
-
