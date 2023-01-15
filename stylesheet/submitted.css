@@ -1,0 +1,35 @@
+.body {
+    background-color: rgb(238, 234, 223);
+}
+
+.submitted-info {
+    margin-top: 30px;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.submitted-info p {
+    font-size: 26px;
+    margin: 50px;
+}
+
+.return-home {
+    background-color: rgb(99, 169, 250);
+    border: none;
+    padding: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.return-home:hover {
+    opacity: 80%;
+}
+
