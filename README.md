@@ -2,8 +2,8 @@
 
 LINK TO HOSTED SERVER:
 
-- https://titan.csit.rmit.edu.au/~s3856456/wp/a1/
-- https://titan.csit.rmit.edu.au/~s3718003/wp/a1/
+- https://titan.csit.rmit.edu.au/~s3856456/wp/a1/index.html
+- https://titan.csit.rmit.edu.au/~s3718003/wp/a1/index.html
 
 REFERENCES:
 
