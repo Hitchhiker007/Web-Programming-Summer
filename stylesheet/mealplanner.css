@@ -95,17 +95,17 @@ form .button input:hover {
   color: black;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   justify-content: center;
   max-height: 100%;
-}
+} */
 
 .meal_planner_list {
   flex: 1; /* take available space */
   overflow: auto;
 }
-
+/* 
 li {
   min-width: 2px;
   min-height: 2px;
@@ -118,7 +118,7 @@ li {
   border-color: rgb(199, 199, 199);
   flex-shrink: 1;
   font-size: small;
-}
+} */
 
 .meal_planner_list {
 }
