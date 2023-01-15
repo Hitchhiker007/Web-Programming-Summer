@@ -22,6 +22,22 @@
     height: 100%;
 }
 
+.mealplanner-link {
+    background-color: rgb(99, 169, 250);
+    border: none;
+    padding: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.mealplanner-link:hover {
+    opacity: 80%;
+}
+
 @media only screen and (max-width: 875px) {
     .video-grid {
         display: initial;
