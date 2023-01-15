@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="stylesheet/services_videos.css">
         <link rel="stylesheet" href="stylesheet/life.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="index.js" defer></script>
         <title>LIFE</title>
     </head>
     <body>
@@ -25,21 +24,18 @@
                     <li><a href="index.html">
                             <p>Home</p>
                         </a></li>
-                    <li><a href="#">
-                            <p>Account</p>
-                        </a></li>
                     <li><a href="services.html">
                             <p>Services</p>
                         </a></li>
+                     <li><a href="contact_us.html">
+                        <p>Contact Us</p>
+                    </a></li>
                     <li><a href="sign_up.html">
                             <p>Sign Up
                             </p>
                         </a></li>
                     <li><a href="login.html">
                             <p>Login</p>
-                        </a></li>
-                    <li><a href="contact_us.html">
-                            <p>Contact Us</p>
                         </a></li>
                 </ul>
             </div>
@@ -146,6 +142,14 @@
 
                 </section>
             </main>
+            <script>
+            const menu = document.getElementsByClassName('menu-icon')[0]
+            const navbar = document.getElementsByClassName('nav-bar')[0]
+
+            menu.addEventListener('click', () => {
+            navbar.classList.toggle('active')
+            })
+            </script>
             <footer>
                 <p>© William Wells & Derek Tek 2023 LLC</p>
             <footer>
