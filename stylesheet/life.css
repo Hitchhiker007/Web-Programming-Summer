@@ -2,10 +2,19 @@ section {
     margin-bottom: 40px;
 }
 
-img {
+.img-life {
     display: block;
     width: 100%;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.img-services {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
