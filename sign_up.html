@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="stylesheet/style_form.css">
+    <link rel="stylesheet" href="stylesheet/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="index.js" defer></script>
     <script>
 
 // Function for checking regex of the first email, second email does not require this as it needs to be the same
@@ -71,76 +74,113 @@ function checkEmailRegex(form) {
     <script src="populate_year.js" defer></script>
     
 </head>
+<body>
+    <nav class="nav">
+        <a href="#" class="home-logo">
+            <img src="images/home_logo.png" class="logo-img" alt="home logo image">
+        </a>
 
-<div class="body">
-    <div class="container">
-        <div class="title">Sign Up</div>
-        <form onSubmit="return checkEmailRegex(this) && checkEmail(this) && checkMobile(this) && checkBirth(this);" action = "submitted.html">
-            <div class="content">
-                <div class="input-box">
-                    <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your first name" pattern="[/A-Z][^0-9]{0,}" maxlength="30"
-                        title="The first letter of your name should be a capital, including no numbers." required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your last name" maxlength="30" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Email Address</span>
-                    <input type="text" name="email1" placeholder="Enter your email address"required>
-                        <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  -->
-                </div>
-                <div class="input-box">
-                    <span class="details">Confrim Email Address</span>
-                    <input type="text" name="email2" placeholder="Confirm your email address" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input type="text" name="mobile" placeholder="Enter your Phone Number. (e.g 61412345678)" required>
-                </div>
-                <div class="input-box">
-                    <span class="birth-year-title">Birth Year</span>
-                    <div class="birth-year">
-                        <label for="year">Select your birth year:</label>
-                        <select id="year-birth1" required>
-                            <option value="">None</option>
-                        </select>
+        <a href="#" class="menu-icon">
+            <span class="menu-icon-line"></span>
+            <span class="menu-icon-line"></span>
+            <span class="menu-icon-line"></span>
+        </a>
+
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">
+                        <p>Home</p>
+                    </a></li>
+                <li><a href="#">
+                        <p>Account</p>
+                    </a></li>
+                <li><a href="services.html">
+                        <p>Services</p>
+                    </a></li>
+                <li><a href="sign_up.html">
+                        <p>Sign Up
+                        </p>
+                    </a></li>
+                <li><a href="login.html">
+                        <p>Login</p>
+                    </a></li>
+                <li><a href="contact_us.html">
+                        <p>Contact Us</p>
+                    </a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="body">
+        <div class="container">
+            <div class="title">Sign Up</div>
+            <form onSubmit="return checkEmailRegex(this) && checkEmail(this) && checkMobile(this) && checkBirth(this);" action = "submitted.html">
+                <div class="content">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter your first name" pattern="[/A-Z][^0-9]{0,}" maxlength="30"
+                            title="The first letter of your name should be a capital, including no numbers." required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter your last name" maxlength="30" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email Address</span>
+                        <input type="text" name="email1" placeholder="Enter your email address"required>
+                            <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  -->
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confrim Email Address</span>
+                        <input type="text" name="email2" placeholder="Confirm your email address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" name="mobile" placeholder="Enter your Phone Number. (e.g 61412345678)" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="birth-year-title">Birth Year</span>
+                        <div class="birth-year">
+                            <label for="year">Select your birth year:</label>
+                            <select id="year-birth1" required>
+                                <option value="">None</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="student-radio">
+                        <span class="details">Student Status</span>
+                        <label class="radio-inline">
+                            <input type="radio" name="StudentStatus" required>Studying
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="StudentStatus">Not Studying
+                        </label>
+                    </div>
+                    <div class="employment-radio">
+                        <span class="details">Employment Status</span>
+                        <label class="radio-inline">
+                            <input type="radio" name="EmploymentStatus" required>Employed
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="EmploymentStatus">Seeking Employment
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="EmploymentStatus">Other
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z]).{6,}"
+                            title="Your password must be at least 6 characters long, and have minimum one letter and one number"
+                            required>
                     </div>
                 </div>
-                <div class="student-radio">
-                    <span class="details">Student Status</span>
-                    <label class="radio-inline">
-                        <input type="radio" name="StudentStatus" required>Studying
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="StudentStatus">Not Studying
-                    </label>
+                <div class="button">  
+                        <input type="submit" value="Sign Up"> 
                 </div>
-                <div class="employment-radio">
-                    <span class="details">Employment Status</span>
-                    <label class="radio-inline">
-                        <input type="radio" name="EmploymentStatus" required>Employed
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="EmploymentStatus">Seeking Employment
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="EmploymentStatus">Other
-                    </label>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z]).{6,}"
-                        title="Your password must be at least 6 characters long, and have minimum one letter and one number"
-                        required>
-                </div>
-            </div>
-            <div class="button">  
-                    <input type="submit" value="Sign Up"> 
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div>
-
+</body>
 </html>
